@@ -4,7 +4,7 @@
   border: none;
   background-color: #eb7a02;
   color: white;
-  padding: 0.75rem 3rem;
+  padding: 0.75rem 2rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -55,5 +55,14 @@
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

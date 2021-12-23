@@ -13,7 +13,7 @@ function Header(props) {
           src={bkblogo}
           alt="Big Kahuna Burger Logo"
         />{" "}
-        <HeaderButton />
+        <HeaderButton onClick={props.onShowCart} />
       </header>
       <div className={styles["main-image"]}>
         <img src={burgers} alt="Burgers Header" />
