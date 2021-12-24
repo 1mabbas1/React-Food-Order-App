@@ -7,12 +7,16 @@ import CartItem from "./CartItem";
 function Cart(props) {
   const cartCtx = useContext(CartContext);
 
-  const totalAmount = `£${cartCtx.totalAmount}`;
+  const totalAmount = `£${cartCtx.totalAmount.toFixed(2)}`;
   const cartHasItems = cartCtx.items.length > 0;
 
-  function removeItemHandler(id) {}
+  function removeItemHandler(id) {
+    cartCtx.removeItem(id);
+  }
 
-  function addItemHandler(item) {}
+  function addItemHandler(item) {
+    cartCtx.addItem({ ...item, amount: 1 });
+  }
 
   const cartItems = (
     <ul className={styles["cart-items"]}>
