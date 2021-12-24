@@ -5,7 +5,7 @@ import react from "react";
 function Meals() {
   return (
     <react.Fragment>
-      <MealSummary></MealSummary>
+      <MealSummary />
       <AvailableMeals />
     </react.Fragment>
   );
