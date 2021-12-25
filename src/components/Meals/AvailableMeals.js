@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 function AvailableMeals() {
   const [meals, setmeals] = useState([]);
   const [isLoading, setisLoading] = useState(true);
-  const [Error, setError] = useState(null);
+  const [Error, setError] = useState();
 
   useEffect(() => {
     const fetchMeals = async () => {
